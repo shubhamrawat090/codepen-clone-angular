@@ -9,6 +9,8 @@ export class EditorComponent {
   editorOptions = {};
 
   @Input() set language(lang: any) {
+    console.log(lang);
+
     this.editorOptions = {
       theme: 'vs-dark',
       language: lang,
